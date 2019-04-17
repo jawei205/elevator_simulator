@@ -8,6 +8,10 @@ Timer timer;
 Timer startDown;
 Timer startUp;
 
+//load the elevator music
+import processing.sound.*;
+SoundFile sound;
+
 void setup() {
   size(450, 1000);
   graphics = new graphics();
@@ -17,6 +21,10 @@ void setup() {
 
   //reset the timers
   timer.reset();
+  
+  //load the music
+  sound = new SoundFile(this,"ElevatorMusic.mp3");
+  sound.play();
 }
 void draw() {
   background(0);

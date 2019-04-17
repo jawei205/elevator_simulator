@@ -19,5 +19,9 @@ class graphics {
     stroke(255);
     strokeWeight(5);
     rect(width/2, 65, 150, 110);
+    
+    //show the source of the music
+    textSize(10);
+    text("Music:YouTube/Jemandzockt",3,990);
   }
 }
